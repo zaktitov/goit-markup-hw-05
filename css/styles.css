@@ -231,16 +231,14 @@ p {
   border-radius: 4px;
   border-style: none;
 
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .button-index:hover,
 .button-index:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 /* ========BACkDROP index========= */
@@ -297,17 +295,18 @@ p {
   border-radius: 50%;
   cursor: pointer;
   padding: 0;
+  color: black;
 
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   color: #188ce8;
 }
 
-.icon-close {
-  color: currentColor;
+.icon-close-wind {
+  fill: currentColor;
 }
 
 /*============OUR FEATURES SEctION=====*/
@@ -474,7 +473,6 @@ p {
   margin-right: 30px;
   width: 270px;
   left: 215px;
-  top: 1635px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
