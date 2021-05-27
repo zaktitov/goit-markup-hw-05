@@ -512,6 +512,7 @@ p {
   padding: 30px 32px;
   background: var(--buttons-text-active);
 }
+
 .names-discription {
   color: var(--secondary-text);
   font-family: inherit;
@@ -548,10 +549,10 @@ p {
   align-items: center;
   text-decoration: none;
   color: var(--icon-color);
+  cursor: pointer;
 
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .team-social-links-link:hover,
@@ -564,6 +565,7 @@ p {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transition: fill 255ms var(--transition-timing-function);
 }
 
 .clients-list {
@@ -584,9 +586,7 @@ p {
   border-radius: 5%;
   color: var(--icon-color);
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-list-link:hover,
@@ -641,9 +641,7 @@ p {
   line-height: 1.71;
   text-decoration: none;
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-adress:hover,
@@ -661,9 +659,7 @@ p {
   line-height: 1.71;
   text-decoration: none;
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-contact:hover,
@@ -708,9 +704,8 @@ p {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .footer-social-links:hover,
@@ -812,9 +807,8 @@ p {
   background: #ffffff;
   box-sizing: border-box;
 
-  transition-property: box-shadow;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .card-set-content:hover,
