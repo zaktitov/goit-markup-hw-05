@@ -255,7 +255,7 @@ p {
 
 .backdrop {
   position: fixed;
-  z-index: 3;
+  z-index: 50;
   top: 0;
   left: 0;
   width: 100%;
@@ -286,26 +286,17 @@ p {
   border-radius: 4px;
 }
 
-.modal-window {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.modal-icon {
+.modal-button {
   position: absolute;
-  right: 8px;
   top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-
-  background: transparent;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  color: black;
+  padding: 0;
 
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
