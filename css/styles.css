@@ -286,7 +286,7 @@ p {
   border-radius: 4px;
 }
 
-.modal-button {
+.modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
